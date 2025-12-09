@@ -12,9 +12,10 @@
  (modules libirmin irmin_bindings)
  (foreign_stubs
   (language c)
-  (names irmin))
+  (names irmin)
+  (flags -Wl,-znow -Wno-unused-variable))
  (flags
-  (:standard -w -unused-var-strict -ccopt "-Wl,-znow"))
+  (:standard -w -unused-var-strict))
  (enabled_if
   (<> %{ocaml_version} 5.2.0~alpha1)))
 
