@@ -6,6 +6,7 @@
 
 (mdx
  (files README.md)
+ (package irmin-cli)
  (deps %{bin:irmin})
  (libraries
   irmin
