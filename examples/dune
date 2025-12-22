@@ -64,6 +64,7 @@
 (mdx
  (files merkle_proofs.md)
  (deps %{bin:irmin})
+ (package irmin-cli)
  (libraries
   irmin
   irmin-cli
